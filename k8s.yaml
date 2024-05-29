@@ -1,0 +1,25 @@
+---
+- name: hema
+  hosts: all 
+  become: yes
+  tasks:
+    - name: install openjdk
+      ansible.builtin.apt:
+         name: openjdk-17-jdk
+         state: present
+         update_cache: yes
+    - name: copy files
+      ansible.builtin.copy:
+        src: "pom.xml"
+        dest: /home/ubuntu/spc/target
+        owner: ubuntu 
+        group: ubuntu 
+        mode: 0644
+    - name: apache
+      ansible.builtin.apt:
+        name: apache2
+        state: present 
+        update_catch: true
+      notify:
+        - restart apache2
+      
