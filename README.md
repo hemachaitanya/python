@@ -168,7 +168,8 @@ for s in strings:
 
 
 * create one file and insert data inside the file using script
-  ```file.py
+  
+```file.py
   # Open a file named output.txt in write mode ('w')
 with open('output.txt', 'w') as f:
     # Write some data to the file
