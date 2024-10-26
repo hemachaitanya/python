@@ -200,7 +200,9 @@ tuples also work like lists
 touple is passed when executing the program
 
 names = ("a", "b", "c)
+
 names[0]
+
 names[1::-1] ## print in a reverse order
 
 tuples cannot be changed once initialized
@@ -213,7 +215,9 @@ if you know the size is fixed for variables, you can use tuple , in acse variabl
 ### filter function
 
 sum(list(filter(is_even,get_fibbonaci_sequence(max))))
+
 result = list(filter(is_prime , range(1,10000)))
+
 print(result)
 
 ## dictionary
@@ -249,7 +253,9 @@ print(ipl_teams)
 ## loop trough dictionary
 
 for city , name in ipl_teams.items():
+
     print (city, end=" ==>")
+    
     print(name)
 
 city ==> team name
@@ -378,7 +384,9 @@ ex: def test_lumpsum():
 ## file exits or not os operationmis used
 
 if os.path.exists(path):
+
     filt_exits = true
+    
 ## add headers for csv files
 
 ## generators in python
@@ -527,7 +535,9 @@ data have 2 variables (1) relational database
                        (2) no sql (mangodb , casandra , dynamo db)
 
                          * azure casmos
+                         
                          * aws dynamodb
+                         
                          * gcp 
 ## download sqlite
 
