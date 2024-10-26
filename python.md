@@ -41,10 +41,14 @@ print(num1 - num2)
 
 ### python
 
-num1 + num2 
+num1 + num2
+
 num1 - num2
+
 num1 / num2
+
 num1 % num2
+
 num1 * num2
 
 
